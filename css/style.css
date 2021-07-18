@@ -1,0 +1,148 @@
+:root {
+    --titulo: 'PT sans', sans-serif;
+    --parrafo: 'Playfair Display', serif;
+
+    --primario: #784d3c;
+    --blanco: #ffffff;
+    --negro: #000000;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /*1rem = 10px*/
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--parrafo);
+    font-size: 4rem;
+    line-height: 2;
+}
+
+/*Globales*/
+
+.contenedor {
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--titulo);
+}
+
+h1 {
+    color: var(--blanco);
+    font-size: 2.8rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+h4 {
+    font-size: 1.4rem;
+}
+
+p {
+    font-size: 1.4rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.cetrar-texto{
+    text-align: center;
+}
+
+.header {
+    background-image: url(../img/banner.jpg);
+    height: 60rem;
+    background-size: cover;
+    background-repeat: no repeat;
+    background-position: center center;
+}
+
+.header__texto {
+    text-align: center;
+    color: var(--blanco);
+    margin-top: 15rem;
+}
+
+h1 span{
+    color: #c3c3c3c3;
+    font-weight: bold;
+}
+
+.navegacion__enlace {
+    color: var(--blanco);
+    font-family: var(--parrafo);
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}
+
+.barra {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.navegacion {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 4.6rem;
+    }
+
+    h2 {
+        font-size: 4rem;
+    }
+
+    h3 {
+        font-size: 3.6rem;
+    }
+
+    h4 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 3rem;
+    }
+
+    .barra {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .navegacion {
+        flex-direction: row;
+        gap: 2rem;
+    }
+}
