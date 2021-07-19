@@ -1,6 +1,6 @@
 :root {
     --titulo: 'PT sans', sans-serif;
-    --parrafo: 'Playfair Display', serif;
+    --parrafo: 'Poppins', serif;
 
     --primario: #784d3c;
     --blanco: #ffffff;
@@ -144,5 +144,11 @@ h1 span{
     .navegacion {
         flex-direction: row;
         gap: 2rem;
+    }
+
+    .contenido-principal {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 3rem;
     }
 }
